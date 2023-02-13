@@ -31,16 +31,16 @@ public class GeradorListaMediasAlunos {
 		}
 
 		for (int i = 0; i < nAlunos; i++) {
-			System.out.println("Digite o rm do " + (i + 1) + "� aluno");
+			System.out.println("Digite o rm do " + (i + 1) + "° aluno");
 			rms[i] = sc.nextInt();
 			if(rms[i]<0){
 				System.out.println("RM negativo!!!!!!");
 				nAlunos =0;
 				break;
 			}
-			System.out.println("Digite a primeira nota do " + (i + 1) + "� aluno");
+			System.out.println("Digite a primeira nota do " + (i + 1) + "° aluno");
 			notas1[i] = sc.nextFloat();
-			System.out.println("Digite a segunda nota do " + (i + 1) + "� aluno");
+			System.out.println("Digite a segunda nota do " + (i + 1) + "° aluno");
 			notas2[i] = sc.nextFloat();
 		}
 		sc.close();
@@ -63,7 +63,7 @@ public class GeradorListaMediasAlunos {
 			if ((notas1[i] <= 10 && notas1[i] >= 0) && (notas2[i] <= 10 && notas2[i] >= 0)) {
 				medias[i] = (notas1[i] + notas2[i]) / 2;
 			} else {
-				System.out.println("Essa m�dia foi calculada com nota(s) inv�lidas!");
+				System.out.println("Essa média foi calculada com nota(s) inválidas!");
 				break;
 			}
 		}
@@ -76,7 +76,7 @@ public class GeradorListaMediasAlunos {
 		int rmsAprovados[] = new int [nAlunos];
 		for (int i=0; i<nAlunos ;i++) {
 			System.out.println("\n---------------------------------RM E NOTA ALUNO---------------------------------------------");
-			System.out.println("RM: " + rms[i] + "\nM�dia:" + medias[i]);
+			System.out.println("RM: " + rms[i] + "\nMédia:" + medias[i]);
 			if(medias[i]>= 6){
 				rmsAprovados[i] = rms[i];
 				System.out.println("Aluno aprovado!!!");
