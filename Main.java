@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GeradorListaMediasAlunos {
+public class Main {
 	
 	//1°método
 	public static void main(String[] args) {
